@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  .card {
+    @apply bg-white border border-base-300 col-span-12 rounded-md overflow-hidden;
+  }
+
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+}
+
+.content-height {
+  min-height: calc(100vh - 3.5rem);
+  width: 100%;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+    transform: translateX(0%);
+  }
+
+  50% {
+    width: 100%;
+    transform: translateX(0%);
+  }
+
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes loading2 {
+  0% {
+    display: block;
+    width: 0%;
+    transform: translateX(0%);
+  }
+
+  20% {
+    display: block;
+    width: 0%;
+    transform: translateX(0%);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+/* The element to apply the animation to */
+.loading-bar {
+  animation: loading 3s infinite;
+}
+
+.loading-bar-2 {
+  animation: loading2 3s infinite;
+}

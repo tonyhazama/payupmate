@@ -1,0 +1,40 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["warn", {
+      "endOfLine": "auto"
+    }],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-filename-extension": "off",
+    "react/function-component-definition": "off",
+    "import/extensions": "off",
+    "import/order": "off",
+    "import/prefer-default-export": 0,
+    "no-shadow": 0,
+    "arrow-body-style": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/jsx-props-no-spreading": 0,
+    "@typescript-eslint/consistent-type-imports": 0,
+    "react/no-array-index-key": 0,
+    "react/prop-types": "warn",
+    "react/no-unstable-nested-components": 0
+  }
+}
